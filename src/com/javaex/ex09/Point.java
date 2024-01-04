@@ -46,7 +46,7 @@ public class Point {
 	}
 
 	public void draw() {
-		System.out.println("점[x=" + this.x + ", y=" + this.y + "]를 그렸습니다.");
+		System.out.println("점[x=" + this.getX() /*getX()메소드가 정교하다면 갖다 써도 됨*/ + ", y=" + this.y + "]를 그렸습니다.");
 		
 
 	}
