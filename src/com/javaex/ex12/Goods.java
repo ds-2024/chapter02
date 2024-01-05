@@ -3,14 +3,14 @@ package com.javaex.ex12;
 public class Goods {
 	// 필드
 	private String name;
-	private int price;
-	private static int count;
+	private int price; //각자
+	public static int count; // static 공통
 
 	
 	// 생성자
 	public Goods() {
 		count = count + 1; // 추가. 디폴트 생성자.//본인것에서 계속 1만 추가.
-		 //따라서 계속 1이 나옴. 누적이 안됨.
+		 //따라서 계속 1이 나옴. 누적이 안됨.// 공통변수 써줘야함->static 공간에 올려줘야함.//동작 위주로 static에 올려줘야함.
 	}
 	
 	public Goods(String name, int price) {
